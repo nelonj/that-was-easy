@@ -8,7 +8,7 @@
 }
 
 
-.button1 {
+.easy {
   padding:10px;
   margin: 5px;
   border: 2px solid red;
@@ -21,7 +21,7 @@
 
 }
 
-.button2 {
+.okay {
   padding:10px;
   margin: 5px;
   border: 2px solid green;
@@ -34,7 +34,7 @@
 
 }
 
-.button3 {
+.difficult {
   padding:10px;
   margin: 5px;
   border: 2px solid blueviolet;
@@ -47,7 +47,7 @@
 
 }
 
-.button4 {
+.too_difficult {
   padding:10px;
   margin: 5px;
   border: 2px solid blue;

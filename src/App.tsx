@@ -10,7 +10,7 @@ function App() {
       <AlertButton alert = 'easy'  />
       <AlertButton alert = 'okay' />
       <AlertButton alert = 'difficult'  />
-      <AlertButton alert = 'too difficult'  />
+      <AlertButton alert = 'too_difficult'  />
       
 
       {/* <button 
