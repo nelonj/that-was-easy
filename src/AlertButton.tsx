@@ -2,7 +2,8 @@ import React from 'react'
 
 type ButtonProps = {
     alert: string
-    clickHandler: ()=> void   //means its type is 'function'
+    clickHandler: ()=> void 
+    isClicked: boolean  //means its type is 'function'
 }
 
 // function ClassCheck (name) {
@@ -12,9 +13,14 @@ type ButtonProps = {
 // }
 
 function AlertButton (props: ButtonProps) {
+    console.log(props.isClicked)
+    let addClass;
+    if (props.isClicked === true) {
+         addClass = "isClicked" 
+    }  else { addClass = ""}
     return (
         <button 
-            className = {props.alert} 
+            className = {props.alert + " " + addClass} 
             onClick = {props.clickHandler} >
         {props.alert} 
         </button>
