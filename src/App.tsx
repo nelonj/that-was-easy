@@ -1,17 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AlertButton from './AlertButton'
+
 
 function App() {
-  
-  // const buttons = ['easy', 'okay', 'difficult', 'too difficult'];
-  // buttons.forEach(element => <button></button>)
-  
+
   return (
-    
-    <div className="App">
-       
-      <button 
+    <div className= "App">
+      <AlertButton alert = 'easy'  />
+      <AlertButton alert = 'okay' />
+      <AlertButton alert = 'difficult'  />
+      <AlertButton alert = 'too difficult'  />
+      
+
+      {/* <button 
         className="button1" 
         onClick={() => alert("That was easy")}
         > easy </button>
@@ -26,7 +28,7 @@ function App() {
       <button 
         className="button4" 
         onClick={() => alert("That was too difficult")}
-        > too difficult </button>
+        > too difficult </button> */}
     </div>
   );
 }
