@@ -3,22 +3,30 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  
+  // const buttons = ['easy', 'okay', 'difficult', 'too difficult'];
+  // buttons.forEach(element => <button></button>)
+  
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       
+      <button 
+        className="button1" 
+        onClick={() => alert("That was easy")}
+        > easy </button>
+      <button 
+        className="button2" 
+        onClick={() => alert("That was okay")}
+        > okay </button>
+      <button 
+        className="button3" 
+        onClick={() => alert("That was difficult")}
+        > difficult </button>
+      <button 
+        className="button4" 
+        onClick={() => alert("That was too difficult")}
+        > too difficult </button>
     </div>
   );
 }
