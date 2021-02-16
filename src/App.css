@@ -66,7 +66,7 @@
 
 
 
-.button1:hover {
+.easy:hover {
   padding:10px;
   margin: 5px;
   border: 2px solid red;
@@ -76,4 +76,40 @@
   color: white;
   font-size: 20px;
   background-color: rgb(228, 127, 127)
+}
+
+.okay:hover {
+  padding:10px;
+  margin: 5px;
+  border: 2px solid green;
+  border-radius:50%;
+  height: 100px;
+  width: 100px;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(155, 190, 155)
+}
+
+.too_difficult:hover {
+  padding:10px;
+  margin: 5px;
+  border: 2px solid blue;
+  border-radius:50%;
+  height: 100px;
+  width: 100px;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(104, 129, 240)
+}
+
+.difficult:hover {
+  padding:10px;
+  margin: 5px;
+  border: 2px solid blueviolet;
+  border-radius:50%;
+  height: 100px;
+  width: 100px;
+  color: white;
+  font-size: 20px;
+  background-color:rgb(203, 151, 238)
 }

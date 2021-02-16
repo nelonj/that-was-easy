@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import AlertButton from './AlertButton'
 
-const buttons = ['easy', 'okay', 'difficult', 'too_difficult', 'medium', 'easy']
+const buttons = ['easy', 'okay', 'difficult', 'too_difficult']
 
 
 

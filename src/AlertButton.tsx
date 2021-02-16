@@ -5,6 +5,12 @@ type ButtonProps = {
     clickHandler: ()=> void   //means its type is 'function'
 }
 
+// function ClassCheck (name) {
+//     if (name.includes(' ')) {
+//         return 
+//     }
+// }
+
 function AlertButton (props: ButtonProps) {
     return (
         <button 
