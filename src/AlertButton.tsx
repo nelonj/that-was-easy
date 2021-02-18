@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 type ButtonProps = {
     alert: string
-    clickHandler: ()=> void 
-    isClicked: boolean  //means its type is 'function'
+    clickHandler: () => void
+    isClicked: string  //means its type is 'function'
+
 }
 
 // function ClassCheck (name) {
@@ -12,18 +13,27 @@ type ButtonProps = {
 //     }
 // }
 
-function AlertButton (props: ButtonProps) {
-    console.log(props.isClicked)
+function AlertButton(props: ButtonProps) {
+    const [individualCount, setIndividualCount] = useState(0)
     let addClass;
-    if (props.isClicked === true) {
-         addClass = "isClicked" 
-    }  else { addClass = ""}
+    if (props.isClicked === "italic") {
+        addClass = "hasBeenClicked"
+    } else { addClass = "" }
+    function myFunction(prevCount: number) {
+        return prevCount+1
+     }
+
     return (
-        <button 
-            className = {props.alert + " " + addClass} 
-            onClick = {props.clickHandler} >
-        {props.alert} 
+        <button
+            className={props.alert + " " + addClass}
+            onClick={() => {
+                props.clickHandler()
+                setIndividualCount(myFunction)
+            }} >
+            {props.alert} :
+            {individualCount}
         </button>
+
     )
 }
 

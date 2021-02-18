@@ -7,17 +7,37 @@ const buttons = ['easy', 'okay', 'difficult', 'too_difficult']
 
 
 function App() {
-  const [click, setClick] = useState(false)
-  console.log(click)
+  
+  const [font, setFont] = useState("normal")
+  const [count, setCount] = useState(0)
+  
   return (
-    <div className= "App">
+    <div className = 'App'>
+    <div className = 'Counter'> Counter: {count} </div>
+    <div className= "Buttons">
+      
       {buttons.map(element => (
         <AlertButton 
-          isClicked = {click}
+          isClicked = {font}
           alert = {element} 
-          clickHandler = {() => { setClick(true); window.alert("That was " + element)
+          
+          clickHandler = {() => {
+            setCount(prevValue => prevValue + 1)
+
+            if (font === "normal") {
+              setFont("italic");
+              }
+            else if (font ==="italic") {
+              setFont("normal");
+            } 
+            // window.alert("That was " + element)
       }} />
-      ))}</div>
+      
+      ))}
+    
+      
+      </div>
+      </div>
   );
 }
 
